@@ -7,10 +7,11 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Typography } from './src/styles/Typography';
 function HomeScreen() {
   return (
-    <View className='flex flex-1 bg-red-300'>
-      <Text>Home Screen</Text>
+    <View className='flex'>
+      <Text style={Typography.HeadingLargeBold}>Home Screen</Text>      
     </View>
   );
 }
@@ -22,7 +23,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} options={{ header: () => null }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
