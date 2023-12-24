@@ -16,9 +16,7 @@ module.exports = {
         "placeholder-typed"  : "#393938",
         "alert-success" : "#00C814",
         "alert-warning" : "#FFCB45",
-        "alert-cancel"  : "#E10000",
-        
-        
+        "alert-cancel"  : "#E10000",                
       }
     },
   },
